@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Verónica Sencever - Perfil Comercial y Ventas</title>
+    <style>
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #334155;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            min-height: 1100px; /* Aproximadamente altura A4 */
+        }
+
+        /* HEADER */
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 5px solid #3b82f6;
+        }
+
+        .header-info h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .header-info p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        .contact-details {
+            text-align: right;
+            font-size: 0.9rem;
+        }
+
+        .contact-item {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        /* LAYOUT SECTIONS */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            flex-grow: 1;
+        }
+
+        .sidebar {
+            background-color: #f8fafc;
+            padding: 30px;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #1e293b;
+            text-transform: uppercase;
+            border-bottom: 2px solid #3b82f6;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* EXPERIENCE & EDUCATION */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 1.05rem;
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            color: #64748b;
+            font-style: italic;
+        }
+
+        .item-subtitle {
+            font-weight: 600;
+            color: #3b82f6;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+
+        ul.list-style {
+            padding-left: 18px;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* SKILLS & REFERENCES */
+        .skill-tag {
+            display: inline-block;
+            background: #e2e8f0;
+            color: #475569;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin: 0 5px 8px 0;
+            font-weight: 500;
+        }
+
+        .reference-item {
+            margin-bottom: 15px;
+            font-size: 0.85rem;
+        }
+
+        .ref-name {
+            font-weight: 700;
+            color: #1e293b;
+            display: block;
+        }
+
+        .ref-contact {
+            color: #3b82f6;
+            font-weight: 600;
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .cv-container {
+                box-shadow: none;
+                max-width: 100%;
+                width: 100%;
+                margin: 0;
+            }
+            header {
+                -webkit-print-color-adjust: exact;
+                background-color: #1e293b !important;
+            }
+            .sidebar {
+                -webkit-print-color-adjust: exact;
+                background-color: #f8fafc !important;
+            }
+            h2 {
+                border-bottom: 2px solid #3b82f6 !important;
+            }
+            .skill-tag {
+                border: 1px solid #cbd5e1;
+                background: none !important;
+            }
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .contact-details {
+                text-align: center;
+            }
+            .contact-item {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- CABECERA -->
+        <header>
+            <div class="header-info">
+                <h1>Verónica Sencever</h1>
+                <p>Perfil Comercial | Atención al Cliente | Gestión Administrativa</p>
+            </div>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span>091 659 578</span>
+                    <strong>&#9742;</strong>
+                </div>
+                <div class="contact-item">
+                    <span>vsencever@gmail.com</span>
+                    <strong>&#9993;</strong>
+                </div>
+                <div class="contact-item">
+                    <span>Av. Carlos Reyles 388, Salto</span>
+                    <strong>&#128205;</strong>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- COLUMNA IZQUIERDA -->
+            <aside class="sidebar">
+                <section>
+                    <h2>Perfil</h2>
+                    <p style="font-size: 0.9rem; text-align: justify;">
+                        Profesional con sólida experiencia en atención al público y gestión operativa. Me destaco por mi proactividad, capacidad de organización y un marcado compromiso con los objetivos institucionales. Poseo excelentes habilidades comunicativas y predisposición para el trabajo en equipo, enfocada siempre en brindar una atención de excelencia y resolver incidencias de manera eficiente.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Habilidades</h2>
+                    <div class="skills-container">
+                        <span class="skill-tag">Ventas y Asesoramiento</span>
+                        <span class="skill-tag">Atención al Cliente</span>
+                        <span class="skill-tag">Gestión de Stock</span>
+                        <span class="skill-tag">Operativa Comercial</span>
+                        <span class="skill-tag">Comunicación Efectiva</span>
+                        <span class="skill-tag">Resolución de Problemas</span>
+                        <span class="skill-tag">Facturación</span>
+                        <span class="skill-tag">Organización de Salón</span>
+                        <span class="skill-tag">Trabajo en Equipo</span>
+                        <span class="skill-tag">Actitud Proactiva</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Referencias</h2>
+                    
+                    <div class="reference-item">
+                        <span class="ref-name">Juan Biassini</span>
+                        <span>Ex Jefe de Facturación (OSE)</span>
+                        <span class="ref-contact">Tel: +598 98 775 729</span>
+                    </div>
+
+                    <div class="reference-item">
+                        <span class="ref-name">Lourdes</span>
+                        <span>Referencia Intendencia de Salto</span>
+                        <span class="ref-contact">Tel: +598 92 514 571</span>
+                    </div>
+
+                    <div class="reference-item">
+                        <span class="ref-name">Erika Díaz</span>
+                        <span class="ref-contact">Cel: 093 860 853</span>
+                    </div>
+
+                    <div class="reference-item">
+                        <span class="ref-name">Enzo Román</span>
+                        <span class="ref-contact">Cel: 091 619 677</span>
+                    </div>
+
+                    <div class="reference-item">
+                        <span class="ref-name">Juana Bordenave</span>
+                        <span class="ref-contact">Cel: 097 717 332</span>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- COLUMNA DERECHA -->
+            <main class="content">
+                <section>
+                    <h2>Experiencia Laboral</h2>
+
+                    <!-- OSE -->
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">O.S.E. (Obras Sanitarias del Estado)</span>
+                            <span class="item-date">Jun. 2024 - Dic. 2024</span>
+                        </div>
+                        <div class="item-subtitle">Funcionaria Zafral - Área de Facturación</div>
+                        <p class="item-desc">
+                            Desempeño en oficina comercial con foco en la gestión precisa de datos y atención al usuario.
+                        </p>
+                        <ul class="list-style">
+                            <li>Atención y asesoramiento personalizado a clientes sobre estados de cuenta.</li>
+                            <li>Gestión administrativa y resolución de consultas operativas.</li>
+                            <li>Cumplimiento de objetivos de facturación y soporte comercial.</li>
+                        </ul>
+                    </div>
+
+                    <!-- INE 2023 -->
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">INE - Censo Nacional 2023</span>
+                            <span class="item-date">Jun. 2023 - Set. 2023</span>
+                        </div>
+                        <div class="item-subtitle">Censista de Operativos Especiales</div>
+                        <p class="item-desc">
+                            Rol orientado al cumplimiento de metas diarias mediante el contacto directo con la población y manejo de herramientas digitales.
+                        </p>
+                        <ul class="list-style">
+                            <li>Planificación y relevamiento de áreas asignadas bajo estándares de calidad.</li>
+                            <li>Aplicación de formularios mediante dispositivos electrónicos de alta precisión.</li>
+                            <li>Gestión de reportes diarios y entrega de equipos tecnológicos (tablets).</li>
+                        </ul>
+                    </div>
+
+                    <!-- ATENCION AL CLIENTE -->
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Atención al Cliente en Comercio</span>
+                            <span class="item-date">2006-2008 / 2012-2014</span>
+                        </div>
+                        <div class="item-subtitle">Vendedora y Auxiliar de Ventas</div>
+                        <p class="item-desc">
+                            Experiencia directa en el sector comercial, enfocada en la satisfacción del cliente y el mantenimiento del local.
+                        </p>
+                        <ul class="list-style">
+                            <li>Venta directa y asesoramiento técnico sobre productos.</li>
+                            <li>Control de stock, reposición de mercadería y orden del salón.</li>
+                            <li>Cierre de ventas y fidelización de clientes.</li>
+                        </ul>
+                    </div>
+
+                    <!-- SECRETARIA -->
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Centro Estudiantes de Derecho (CENUR Salto)</span>
+                            <span class="item-date">2014</span>
+                        </div>
+                        <div class="item-subtitle">Secretaria Administrativa</div>
+                        <p class="item-desc">
+                            Gestión de documentos, atención a estudiantes y coordinación de tareas operativas del centro.
+                        </p>
+                    </div>
+
+                    <!-- OTRAS EXPERIENCIAS -->
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">INE - Censo Nacional 2011</span>
+                            <span class="item-date">2011</span>
+                        </div>
+                        <div class="item-subtitle">Censista Territorial</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Niñera Acompañante</span>
+                            <span class="item-date">2020-2021 / 2022</span>
+                        </div>
+                        <p class="item-desc">Tareas de cuidado, responsabilidad y organización del entorno.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Formación Académica</h2>
+                    
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Certificación en Secretariado Jurídico</span>
+                            <span class="item-date">2018</span>
+                        </div>
+                        <div class="item-subtitle">Instituto Punto Com</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Carrera de Abogacía (Incompleta)</span>
+                            <span class="item-date">Cursado</span>
+                        </div>
+                        <div class="item-subtitle">Universidad de la República (UdelaR)</div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Bachillerato Completo</span>
+                            <span class="item-date">2007</span>
+                        </div>
+                        <div class="item-subtitle">Liceo N.º 1 IPOLL - Salto</div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
