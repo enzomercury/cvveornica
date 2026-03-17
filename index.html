@@ -16,85 +16,85 @@
         body {
             background-color: #f4f7f6;
             color: #334155;
-            line-height: 1.6;
-            padding: 40px 20px;
+            line-height: 1.35; /* Optimizado para espacio */
+            padding: 10px;
         }
 
         .cv-container {
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
             background: #fff;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             display: flex;
             flex-direction: column;
-            min-height: 1100px;
+            min-height: 297mm; /* Tamaño A4 */
         }
 
         /* HEADER */
         header {
             background-color: #1e293b;
             color: #ffffff;
-            padding: 40px;
+            padding: 20px 35px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 5px solid #3b82f6;
+            border-bottom: 4px solid #3b82f6;
         }
 
         .header-info h1 {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
             font-weight: 700;
         }
 
         .header-info p {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             color: #94a3b8;
             font-weight: 400;
         }
 
         .contact-details {
             text-align: right;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
 
         .contact-item {
-            margin-bottom: 5px;
+            margin-bottom: 2px;
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            gap: 10px;
+            gap: 8px;
         }
 
         /* LAYOUT SECTIONS */
         .main-content {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 240px 1fr;
             flex-grow: 1;
         }
 
         .sidebar {
             background-color: #f8fafc;
-            padding: 30px;
-            border-right: 1px solid #e2e880;
+            padding: 15px 20px;
+            border-right: 1px solid #e2e8f0;
         }
 
-        /* PHOTO STYLES WITH PLACEHOLDER */
+        /* PHOTO STYLES */
         .photo-container {
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         .profile-photo-wrapper {
-            width: 180px;
-            height: 180px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             background-color: #e2e8f0;
             overflow: hidden;
             display: flex;
@@ -113,53 +113,52 @@
             z-index: 2;
         }
 
-        /* Ícono de usuario cuando no hay foto */
         .photo-placeholder {
             color: #94a3b8;
-            font-size: 80px;
+            font-size: 50px;
             z-index: 1;
         }
 
         .content {
-            padding: 40px;
+            padding: 20px 30px;
         }
 
         section {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         h2 {
-            font-size: 1.2rem;
+            font-size: 0.95rem;
             color: #1e293b;
             text-transform: uppercase;
             border-bottom: 2px solid #3b82f6;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            padding-bottom: 2px;
+            margin-bottom: 8px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         /* EXPERIENCE & EDUCATION */
         .item {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .item-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 5px;
+            margin-bottom: 1px;
         }
 
         .item-title {
             font-weight: 700;
             color: #1e293b;
-            font-size: 1.05rem;
+            font-size: 0.9rem;
         }
 
         .item-date {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             color: #64748b;
             font-style: italic;
         }
@@ -167,19 +166,19 @@
         .item-subtitle {
             font-weight: 600;
             color: #3b82f6;
-            font-size: 0.95rem;
-            margin-bottom: 5px;
+            font-size: 0.85rem;
+            margin-bottom: 1px;
         }
 
         .item-desc {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-align: justify;
         }
 
         ul.list-style {
-            padding-left: 18px;
-            margin-top: 5px;
-            font-size: 0.9rem;
+            padding-left: 15px;
+            margin-top: 2px;
+            font-size: 0.8rem;
         }
 
         /* SKILLS & REFERENCES */
@@ -187,16 +186,17 @@
             display: inline-block;
             background: #e2e8f0;
             color: #475569;
-            padding: 5px 12px;
+            padding: 2px 7px;
             border-radius: 4px;
-            font-size: 0.85rem;
-            margin: 0 5px 8px 0;
+            font-size: 0.75rem;
+            margin: 0 2px 4px 0;
             font-weight: 500;
         }
 
         .reference-item {
-            margin-bottom: 15px;
-            font-size: 0.85rem;
+            margin-bottom: 8px;
+            font-size: 0.75rem;
+            line-height: 1.2;
         }
 
         .ref-name {
@@ -212,60 +212,23 @@
 
         /* PRINT STYLES */
         @media print {
-            body {
-                background: none;
-                padding: 0;
-            }
-            .cv-container {
-                box-shadow: none;
-                max-width: 100%;
-                width: 100%;
-                margin: 0;
-            }
-            header {
-                -webkit-print-color-adjust: exact;
-                background-color: #1e293b !important;
-            }
-            .sidebar {
-                -webkit-print-color-adjust: exact;
-                background-color: #f8fafc !important;
-            }
-            h2 {
-                border-bottom: 2px solid #3b82f6 !important;
-            }
-            .skill-tag {
-                border: 1px solid #cbd5e1;
-                background: none !important;
-            }
-            /* Ocultar el placeholder en la impresión si no hay foto */
-            .photo-placeholder {
-                display: none;
-            }
-            @page {
-                size: A4;
-                margin: 0;
-            }
+            body { background: none; padding: 0; margin: 0; }
+            .cv-container { box-shadow: none; max-width: 100%; width: 100%; margin: 0; min-height: 100vh; }
+            header { -webkit-print-color-adjust: exact; background-color: #1e293b !important; padding: 15px 35px !important; }
+            .sidebar { -webkit-print-color-adjust: exact; background-color: #f8fafc !important; }
+            h2 { border-bottom: 2px solid #3b82f6 !important; }
+            .skill-tag { border: 1px solid #cbd5e1; background: none !important; }
+            .photo-placeholder { display: none; }
+            @page { size: A4; margin: 0; }
         }
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-            }
-            header {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
-            .contact-details {
-                text-align: center;
-            }
-            .contact-item {
-                justify-content: center;
-            }
-            .photo-container {
-                margin-top: 20px;
-            }
+            .main-content { grid-template-columns: 1fr; }
+            header { flex-direction: column; text-align: center; gap: 10px; }
+            .contact-details { text-align: center; }
+            .contact-item { justify-content: center; }
+            .sidebar { border-right: none; border-bottom: 1px solid #e2e8f0; }
         }
     </style>
 </head>
@@ -276,41 +239,29 @@
         <header>
             <div class="header-info">
                 <h1>Verónica Sencever</h1>
-                <p>Perfil Comercial | Atención al Cliente | Gestión Administrativa</p>
+                <p>Ventas | Atención al Cliente | Gestión Operativa</p>
             </div>
             <div class="contact-details">
-                <div class="contact-item">
-                    <span>091 659 578</span>
-                    <strong>&#9742;</strong>
-                </div>
-                <div class="contact-item">
-                    <span>vsencever@gmail.com</span>
-                    <strong>&#9993;</strong>
-                </div>
-                <div class="contact-item">
-                    <span>Av. Carlos Reyles 388, Salto</span>
-                    <strong>&#128205;</strong>
-                </div>
+                <div class="contact-item"><span>091 659 578</span><strong>&#9742;</strong></div>
+                <div class="contact-item"><span>vsencever@gmail.com</span><strong>&#9993;</strong></div>
+                <div class="contact-item"><span>Av. Carlos Reyles 388, Salto</span><strong>&#128205;</strong></div>
             </div>
         </header>
 
         <div class="main-content">
             <!-- COLUMNA IZQUIERDA -->
             <aside class="sidebar">
-                <!-- ESPACIO PARA FOTO CON MARCADOR VISUAL -->
                 <div class="photo-container">
                     <div class="profile-photo-wrapper">
-                        <!-- Ícono SVG de usuario (se verá si la foto no carga) -->
                         <span class="photo-placeholder">&#128100;</span>
-                        <!-- La foto real -->
                         <img src="foto1.jpg" alt="Foto de Verónica Sencever" onerror="this.style.opacity='0';">
                     </div>
                 </div>
 
                 <section>
-                    <h2>Perfil</h2>
-                    <p style="font-size: 0.9rem; text-align: justify;">
-                        Profesional con sólida experiencia en atención al público y gestión operativa. Me destaco por mi proactividad, capacidad de organización y un marcado compromiso con los objetivos institucionales. Poseo excelentes habilidades comunicativas y predisposición para el trabajo en equipo, enfocada siempre en brindar una atención de excelencia y resolver incidencias de manera eficiente.
+                    <h2>Perfil Profesional</h2>
+                    <p style="font-size: 0.78rem; text-align: justify;">
+                        Sólida experiencia en atención al público, ventas y gestión operativa. Perfil proactivo con alta capacidad de organización, control de stock y compromiso con los objetivos comerciales. Excelentes habilidades comunicativas y predisposición para el trabajo en equipo.
                     </p>
                 </section>
 
@@ -318,46 +269,37 @@
                     <h2>Habilidades</h2>
                     <div class="skills-container">
                         <span class="skill-tag">Ventas y Asesoramiento</span>
+                        <span class="skill-tag">Control de Stock</span>
                         <span class="skill-tag">Atención al Cliente</span>
-                        <span class="skill-tag">Gestión de Stock</span>
-                        <span class="skill-tag">Operativa Comercial</span>
-                        <span class="skill-tag">Comunicación Efectiva</span>
+                        <span class="skill-tag">Gestión Operativa</span>
                         <span class="skill-tag">Resolución de Problemas</span>
-                        <span class="skill-tag">Facturación</span>
-                        <span class="skill-tag">Organización de Salón</span>
+                        <span class="skill-tag">Comunicación Efectiva</span>
                         <span class="skill-tag">Trabajo en Equipo</span>
-                        <span class="skill-tag">Actitud Proactiva</span>
+                        <span class="skill-tag">Facturación</span>
                     </div>
                 </section>
 
                 <section>
                     <h2>Referencias</h2>
-                    
                     <div class="reference-item">
-                        <span class="ref-name">Juan Biassini</span>
-                        <span>Ex Jefe de Facturación (OSE)</span>
+                        <span class="ref-name">Juan Biassini (OSE)</span>
                         <span class="ref-contact">Tel: +598 98 775 729</span>
                     </div>
-
                     <div class="reference-item">
-                        <span class="ref-name">Lourdes</span>
-                        <span>Referencia Intendencia de Salto</span>
+                        <span class="ref-name">Lourdes (Intendencia)</span>
                         <span class="ref-contact">Tel: +598 92 514 571</span>
                     </div>
-
                     <div class="reference-item">
                         <span class="ref-name">Erika Díaz</span>
-                        <span class="ref-contact">Cel: 093 860 853</span>
+                        <span class="ref-contact">093 860 853</span>
                     </div>
-
                     <div class="reference-item">
                         <span class="ref-name">Enzo Román</span>
-                        <span class="ref-contact">Cel: 091 619 677</span>
+                        <span class="ref-contact">091 619 677</span>
                     </div>
-
                     <div class="reference-item">
                         <span class="ref-name">Juana Bordenave</span>
-                        <span class="ref-contact">Cel: 097 717 332</span>
+                        <span class="ref-contact">097 717 332</span>
                     </div>
                 </section>
             </aside>
@@ -367,20 +309,43 @@
                 <section>
                     <h2>Experiencia Laboral</h2>
 
+                    <!-- NUEVA EXPERIENCIA ALMACÉN -->
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Atención en Almacén</span>
+                            <span class="item-date">Marzo 2025 - Nov. 2025</span>
+                        </div>
+                        <div class="item-subtitle">Gestión Comercial y Stock</div>
+                        <ul class="list-style">
+                            <li>Atención directa al público y asesoramiento comercial.</li>
+                            <li>Control exhaustivo de stock, recepción y organización de mercadería.</li>
+                            <li>Tareas de gestión, orden del salón y mantenimiento de inventario.</li>
+                        </ul>
+                    </div>
+
+                    <!-- URUGUAY IMPULSA -->
+                    <div class="item">
+                        <div class="item-header">
+                            <span class="item-title">Uruguay Impulsa - Clínica Municipal</span>
+                            <span class="item-date">Oct. 2025 - Dic. 2025</span>
+                        </div>
+                        <div class="item-subtitle">Auxiliar de Servicios</div>
+                        <ul class="list-style">
+                            <li>Apoyo operativo en instalaciones municipales.</li>
+                            <li>Cumplimiento de protocolos de servicio y atención de tareas asignadas.</li>
+                        </ul>
+                    </div>
+
                     <!-- OSE -->
                     <div class="item">
                         <div class="item-header">
                             <span class="item-title">O.S.E. (Obras Sanitarias del Estado)</span>
                             <span class="item-date">Jun. 2024 - Dic. 2024</span>
                         </div>
-                        <div class="item-subtitle">Funcionaria Zafral - Área de Facturación</div>
-                        <p class="item-desc">
-                            Desempeño en oficina comercial con foco en la gestión precisa de datos y atención al usuario.
-                        </p>
+                        <div class="item-subtitle">Funcionaria Zafral - Facturación</div>
                         <ul class="list-style">
-                            <li>Atención y asesoramiento personalizado a clientes sobre estados de cuenta.</li>
-                            <li>Gestión administrativa y resolución de consultas operativas.</li>
-                            <li>Cumplimiento de objetivos de facturación y soporte comercial.</li>
+                            <li>Atención personalizada a clientes y gestión de estados de cuenta.</li>
+                            <li>Gestión administrativa y resolución eficiente de consultas.</li>
                         </ul>
                     </div>
 
@@ -388,16 +353,12 @@
                     <div class="item">
                         <div class="item-header">
                             <span class="item-title">INE - Censo Nacional 2023</span>
-                            <span class="item-date">Jun. 2023 - Set. 2023</span>
+                            <span class="item-date">2023</span>
                         </div>
                         <div class="item-subtitle">Censista de Operativos Especiales</div>
-                        <p class="item-desc">
-                            Rol orientado al cumplimiento de metas diarias mediante el contacto directo con la población y manejo de herramientas digitales.
-                        </p>
                         <ul class="list-style">
-                            <li>Planificación y relevamiento de áreas asignadas bajo estándares de calidad.</li>
-                            <li>Aplicación de formularios mediante dispositivos electrónicos de alta precisión.</li>
-                            <li>Gestión de reportes diarios y entrega de equipos tecnológicos (tablets).</li>
+                            <li>Relevamiento territorial y aplicación de formularios electrónicos.</li>
+                            <li>Manejo de dispositivos digitales para recolección de datos masivos.</li>
                         </ul>
                     </div>
 
@@ -405,52 +366,36 @@
                     <div class="item">
                         <div class="item-header">
                             <span class="item-title">Atención al Cliente en Comercio</span>
-                            <span class="item-date">2006-2008 / 2012-2014</span>
+                            <span class="item-date">2012-14 / 2006-08</span>
                         </div>
                         <div class="item-subtitle">Vendedora y Auxiliar de Ventas</div>
-                        <p class="item-desc">
-                            Experiencia directa en el sector comercial, enfocada en la satisfacción del cliente y el mantenimiento del local.
-                        </p>
                         <ul class="list-style">
-                            <li>Venta directa y asesoramiento técnico sobre productos.</li>
-                            <li>Control de stock, reposición de mercadería y orden del salón.</li>
-                            <li>Cierre de ventas y fidelización de clientes.</li>
+                            <li>Venta directa y reposición de productos en salón.</li>
+                            <li>Asesoramiento al cliente y cierre de operaciones de venta.</li>
                         </ul>
                     </div>
 
                     <!-- SECRETARIA -->
                     <div class="item">
                         <div class="item-header">
-                            <span class="item-title">Centro Estudiantes de Derecho (CENUR Salto)</span>
+                            <span class="item-title">Secretaría Administrativa (CENUR)</span>
                             <span class="item-date">2014</span>
                         </div>
-                        <div class="item-subtitle">Secretaria Administrativa</div>
-                        <p class="item-desc">
-                            Gestión de documentos, atención a estudiantes y coordinación de tareas operativas del centro.
-                        </p>
+                        <p class="item-desc">Gestión documental y soporte administrativo a estudiantes.</p>
                     </div>
 
-                    <!-- OTRAS EXPERIENCIAS -->
-                    <div class="item">
-                        <div class="item-header">
-                            <span class="item-title">INE - Censo Nacional 2011</span>
-                            <span class="item-date">2011</span>
-                        </div>
-                        <div class="item-subtitle">Censista Territorial</div>
-                    </div>
-
+                    <!-- NIÑERA -->
                     <div class="item">
                         <div class="item-header">
                             <span class="item-title">Niñera Acompañante</span>
-                            <span class="item-date">2020-2021 / 2022</span>
+                            <span class="item-date">2020 - 2022</span>
                         </div>
-                        <p class="item-desc">Tareas de cuidado, responsabilidad y organización del entorno.</p>
+                        <p class="item-desc">Tareas de cuidado con alto sentido de responsabilidad y puntualidad.</p>
                     </div>
                 </section>
 
                 <section>
                     <h2>Formación Académica</h2>
-                    
                     <div class="item">
                         <div class="item-header">
                             <span class="item-title">Certificación en Secretariado Jurídico</span>
@@ -458,15 +403,13 @@
                         </div>
                         <div class="item-subtitle">Instituto Punto Com</div>
                     </div>
-
                     <div class="item">
                         <div class="item-header">
-                            <span class="item-title">Carrera de Abogacía (Incompleta)</span>
-                            <span class="item-date">Cursado</span>
+                            <span class="item-title">Carrera de Abogacía (Cursado)</span>
+                            <span class="item-date">UdelaR</span>
                         </div>
-                        <div class="item-subtitle">Universidad de la República (UdelaR)</div>
+                        <div class="item-subtitle">Universidad de la República</div>
                     </div>
-
                     <div class="item">
                         <div class="item-header">
                             <span class="item-title">Bachillerato Completo</span>
