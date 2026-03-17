@@ -27,7 +27,7 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
-            min-height: 1100px; /* Aproximadamente altura A4 */
+            min-height: 1100px;
         }
 
         /* HEADER */
@@ -78,7 +78,46 @@
         .sidebar {
             background-color: #f8fafc;
             padding: 30px;
-            border-right: 1px solid #e2e8f0;
+            border-right: 1px solid #e2e880;
+        }
+
+        /* PHOTO STYLES WITH PLACEHOLDER */
+        .photo-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-photo-wrapper {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background-color: #e2e8f0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .profile-photo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        /* Ícono de usuario cuando no hay foto */
+        .photo-placeholder {
+            color: #94a3b8;
+            font-size: 80px;
+            z-index: 1;
         }
 
         .content {
@@ -198,6 +237,10 @@
                 border: 1px solid #cbd5e1;
                 background: none !important;
             }
+            /* Ocultar el placeholder en la impresión si no hay foto */
+            .photo-placeholder {
+                display: none;
+            }
             @page {
                 size: A4;
                 margin: 0;
@@ -219,6 +262,9 @@
             }
             .contact-item {
                 justify-content: center;
+            }
+            .photo-container {
+                margin-top: 20px;
             }
         }
     </style>
@@ -251,6 +297,16 @@
         <div class="main-content">
             <!-- COLUMNA IZQUIERDA -->
             <aside class="sidebar">
+                <!-- ESPACIO PARA FOTO CON MARCADOR VISUAL -->
+                <div class="photo-container">
+                    <div class="profile-photo-wrapper">
+                        <!-- Ícono SVG de usuario (se verá si la foto no carga) -->
+                        <span class="photo-placeholder">&#128100;</span>
+                        <!-- La foto real -->
+                        <img src="foto1.jpg" alt="Foto de Verónica Sencever" onerror="this.style.opacity='0';">
+                    </div>
+                </div>
+
                 <section>
                     <h2>Perfil</h2>
                     <p style="font-size: 0.9rem; text-align: justify;">
@@ -279,14 +335,14 @@
                     
                     <div class="reference-item">
                         <span class="ref-name">Juan Biassini</span>
-                        <span> Jefe de Facturación (OSE)</span>
-                        <span class="ref-contact">Tel: 098 775 729</span>
+                        <span>Ex Jefe de Facturación (OSE)</span>
+                        <span class="ref-contact">Tel: +598 98 775 729</span>
                     </div>
 
                     <div class="reference-item">
                         <span class="ref-name">Lourdes</span>
                         <span>Referencia Intendencia de Salto</span>
-                        <span class="ref-contact">Tel: 092 514 571</span>
+                        <span class="ref-contact">Tel: +598 92 514 571</span>
                     </div>
 
                     <div class="reference-item">
